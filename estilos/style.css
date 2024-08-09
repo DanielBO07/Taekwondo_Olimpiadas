@@ -8,8 +8,21 @@
     margin-bottom: 5px;
     font-size: 50px;
 }
-.titulo1{
-    font-size: 40px;
-    margin-inline: auto;
+p.regras input[type="checkbox"]{
+    display: none;
 }
-.titulo1
+.regras h1{
+    font-size: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.regras h1:hover{
+    background-color: rgb(183, 183, 183);
+}
+.regras .conteudo{
+    display:none;
+}
+.regras input[type="checkbox"]:checked ~ .conteudo{
+    display:block;
+}
