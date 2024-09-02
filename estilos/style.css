@@ -1,6 +1,7 @@
 .cabecalho{
     background-color: blue;
     display:flex;
+    margin-bottom: 50px;
 }
 .cabecalho h1{
     margin-inline: auto;
@@ -8,21 +9,20 @@
     margin-bottom: 5px;
     font-size: 50px;
 }
-p.regras input[type="checkbox"]{
-    display: none;
-}
-.regras h1{
+/*regras*/
+summary{
     font-size: 40px;
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
 }
-.regras h1:hover{
+summary:hover{
     background-color: rgb(183, 183, 183);
 }
-.regras .conteudo{
-    display:none;
+details{
+    transition: 0.2s;
+    margin-inline: 10px;
 }
-.regras input[type="checkbox"]:checked ~ .conteudo{
-    display:block;
+details p{
+    margin-inline: 20px;
 }
